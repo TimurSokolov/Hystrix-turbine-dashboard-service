@@ -1,0 +1,15 @@
+spring:
+  profiles: default
+  application:
+    name: hystrix-dashboard
+server:
+  port: 9090
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-us-zone.com:9001/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    appname: hystrix-dashboard
+    hostname: hystrix-dashboard.com
